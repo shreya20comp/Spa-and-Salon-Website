@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Revive Spa and Salon</h1>
+    <nav>
+      <ul class="links">
+        <li><button>Sign In</button></li>
+        <li><button>Book</button></li>
+        <li><button>Cart(<span class="count">10</span>)</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="gallery">
+
+    <div class="content">
+
+      <img src="spa.png" alt="">
+      <h3>Spa </h3>
+      <p>The full form of Spa is Sanus Per Aquam. The meaning 'health by or through water' as it is only about water and
+        its superpowers in your body.</p>
+      <h6>$100.00</h6>
+      <button class="btn btn--secondary">Book Now</button>
+      <button class="btn btn--primary">Add to cart</button>
+    </div>
+    <div class="content">
+      <img src="manicure.png" alt="">
+      <h3>Manicure</h3>
+      <p>A manicure is a mostly cosmetic beauty treatment for the fingernails and hands.It usually consists of
+        filing and shaping the free edge of nails, pushing and clipping</p>
+      <h6>$100.00</h6>
+      <button class="btn btn--secondary">Book Now</button>
+      <button class="btn btn--primary">Add to cart</button>
+    </div>
+    <div class="content">
+      <img src="facial.png" alt="">
+      <h3>Facial</h3>
+      <p>A facial is a family of skin care treatments for the face, including steam, exfoliation (physical and
+        chemical), extraction, creams, lotions, facial masks, peels, and massage. </p>
+      <h6>$100.00</h6>
+      <button class="btn btn--secondary">Book Now</button>
+      <button class="btn btn--primary">Add to cart</button>
+    </div>
+    <div class="content">
+      <img src="waxing.png" alt="">
+      <h3>Waxing</h3>
+      <p>Waxing is the process of hair removal from the root by using a covering of a sticky substance, such as wax for
+        pulling out hair from the follicle.
+      </p>
+      <h6>$100.00</h6>
+      <button class="btn btn--secondary">Book Now</button>
+      <button class="btn btn--primary">Add to cart</button>
+    </div>
+    <div class="content">
+      <img src="manicure.png" alt="">
+      <h3>Manicure</h3>
+      <p>A manicure is a mostly cosmetic beauty treatment for the fingernails and hands.It usually consists of
+        filing and shaping the free edge of nails, pushing and clipping</p>
+      <h6>$100.00</h6>
+      <button class="btn btn--secondary">Book Now</button>
+      <button class="btn btn--primary">Add to cart</button>
+    </div>
+    <div class="content">
+      <img src="facial.png" alt="">
+      <h3>Facial</h3>
+      <p>A facial is a family of skin care treatments for the face, including steam, exfoliation (physical and
+        chemical), extraction, creams, lotions, facial masks, peels, and massage. </p>
+      <h6>$100.00</h6>
+      <button class="btn btn--secondary">Book Now</button>
+      <button class="btn btn--primary">Add to cart</button>
+    </div>
+
+  </div>
+  <script>
+    $(document).ready(function () {
+      var cartCountValue = 0;
+      var cartCount = $('button .count');
+      $(cartCount).text(cartCountValue);
+
+      $('.btn.btn--primary').on('click', function () {
+        cartCountValue++;
+        $(cartCount).text(cartCountValue);
+      });
+    });
+
+  </script>
+</body>
+
+</html>

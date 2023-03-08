@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Revive Spa and Salon</title>
+  <link rel='stylesheet' href='style.css'>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://kit.fontawesome.com/2ea2f2736f.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="D:/website code/Sem 4 project/favicon.png">
+</head>
+
+<body bgcolor="lightyellow">
+
+<div id="home">
+  <br>
+<img src="logo.png" alt="logo" width="300",height="200" class="center">
+
+<br>
+<!-- <ul type="none">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Contacts.html">Contacts</a></li>
+  <li><a href="join_us">Join Us</a></li>
+</ul> -->
+
+
+<table border='0' face=black size='5' font='times' align='center'>
+  <tr>
+    <td><a href="#home">Home</a></td>
+    <td><a href="#abtus">About Us</a></td>
+    <td><a href="#joinus">Join Us</a></td>
+</table>
+
+
+<br>
+<!-- <img src="spa.png" alt="spa image" style="width: 100%;" class="center"> -->
+
+
+
+<div class="slideshow-container">
+
+  <div class="boxOnImg">
+    <h2>Beauty is the wisdom of women, age is the beauty of the soul.Old age is a treasure.Don’t be late for the last date.When you feel beautiful, you look beautiful.We have got the good goods for your skin.</h2>
+
+    <button type="button">BOOK ONLINE</button>
+    <!-- <a href="book_now">BOOK NOW</a> -->
+  </div> 
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="spa.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="spa_2.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="face_2.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="hair.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="mp.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div id="abtus">
+<div class="abtus">
+  ABOUT US
+  <div class="abtus_content">
+    <p>
+        Revive Salon & Spa is the ultimate place of pampering, relaxation and fun, all in one! Located in the Historical Downtown Melbourne District. Here at Revive we are a home for creative, talented and hardworking hair stylists, massage therapists and estheticians. Since June 2017, owner and operator Tiffany Rosenfield has prided herself and her wonderful team on making sure each and every client walks out feeling like their most beautiful self.<h3> Book your appointment today we can welcome you to the #SoRevive lifestyle!</h3>
+    </p>
+
+  </div>
+</div>
+</div>
+ 
+<div id="joinus">
+<div class="mail">
+  JOIN US
+</div>
+<div class="bg-img">
+
+  <form action="/action_page.php" class="container">
+    <h1 style="color:#FAC5A6; text-align: center;">Login</h1>
+
+    <label for="email"><b style="color:#FAC5A6">Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b style="color:#FAC5A6">Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+</div>
+
+
+
+
+
+<!--Testimonials------------------->
+    <section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+            <span>REVIEWS</span>
+            <h1>Clients Says</h1>
+        </div>
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container">
+            <!--BOX-1-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="harry.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Alexandra Will</strong>
+                            <span>@alexandrawill</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>I had a recent hair emergency (someone ruined my hair) and I was lucky to get an appointment with Sophia at Revive who totally transformed my hair back!!! She was able to color correct my hair and give me a perfect mushroomy brown balayage which is what I was originally trying to get when my hair got messed up. She is super efficient and AMAZING at what she does. I’m happy to be able to trust her with my hair :)</p>
+                </div>
+            </div>
+            <!--BOX-2-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="jk.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Smita Jones</strong>
+                            <span>@smitajones</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>I just recently went to this place as a recommendation from a family member and will say 100% the staff is super friendly, upbeat, knowledgeable and Tiffany did an amazing job on my hair! While she was doing my hair (color, highlights and cut) I was also able to watch her do hair extensions on someone else while my color was processing that turned out beautiful!! She really cares about her customers and makes sure every detail of what you want is met!</p>
+                </div>
+            </div>
+            <!--BOX-3-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="emma.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Emma Clief</strong>
+                            <span>@emmaclief</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>Very professional. I was impressed that I could hear the music and my stylist Sofia speaking, all other salons I have been to do not compare to Revive. I can tell they use top of the line styling tools and products, this makes your experience relaxing and enjoyable. I came out feeling and looking like a million bucks. Thank you Sofia and Revive. This salon and spa is a must. Can't wait for my next appt.</p>
+                </div>
+            </div>
+            <!--BOX-4-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="kris.png" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong>Oliva</strong>
+                            <span>@Olivaadward</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>I was treated well as a walk-in; that was refreshing :) To my surprise, they were able to accommodate me and the stylist was super cool. She also gave a really nice hair wash/massage. Pricing was reasonable and drinks are offered. Overall, an enjoyable experience!
+                    I would definitely like to visit this place agail:)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<div class="contacts">
+
+  <i id="insta" class="far fa-brands fa-square-instagram"></i>
+  <i id="face" class="far fa fa-facebook-official" aria-hidden="true"></i>
+</div>
+
+<div id="copy">
+  Copyright &copy 2023 Revive Spa & Salon-All Rights Reserved.
+</div>
+
+
+</body>
+</html>
